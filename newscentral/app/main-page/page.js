@@ -3,11 +3,11 @@
 import { useUserAuth } from "./_utils/auth-context.js";
 
 export default function Home() {
-  const { gitHubSignIn } = useUserAuth();
+  const { googleSignIn } = useUserAuth();
 
   async function SignIn() {
     try {
-      await gitHubSignIn();
+      await googleSignIn();
       window.location.href = "./news-central"; // Redirect to NewsCentral after successful login
     } catch (error) {
       console.log(error);
