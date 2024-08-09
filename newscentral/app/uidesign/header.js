@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="bg-gray-800 text-white">
-        <!-- Top Bar -->
+       
         <div class="flex justify-between items-center p-4 bg-gray-900">
             <div class="text-2xl font-bold">NewsCentral</div>
             <div class="flex-grow mx-4">
@@ -20,7 +20,7 @@
                 <a href="#" class="hover:underline">My Profile</a>
             </div>
         </div>
-        <!-- Navigation Bar -->
+        
         <nav class="bg-gray-800">
             <div class="flex justify-center space-x-6 p-4">
                 <a href="#" class="hover:text-gray-400">Home</a>
@@ -33,7 +33,6 @@
                 <a href="#" class="hover:text-gray-400">Opinion</a>
             </div>
         </nav>
-        <!-- Breaking News Ticker -->
         <div class="bg-red-600 text-white text-center py-2 font-bold">
             Breaking News: Major Event Happening Now!
         </div>

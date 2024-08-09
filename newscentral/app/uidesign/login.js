@@ -1,10 +1,12 @@
+
+
 <section class="bg-gray-50 min-h-screen flex items-center justify-center">
-  <!-- login container -->
+  
   <div class="bg-gray-100 flex rounded-2xl shadow-lg max-w-3xl p-5 items-center">
-    <!-- form -->
+    
     <div class="md:w-1/2 px-8 md:px-16">
       <h2 class="font-bold text-2xl text-[#002D74]">Login</h2>
-      <p class="text-xs mt-4 text-[#002D74]">If you are already a member, easily log in</p>
+      <p class="text-xs mt-4 text-[#002D74]">Easily log in to get latest news from NewsCentral</p>
 
       <button class="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300 text-[#002D74]">
         <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="25px">
@@ -16,17 +18,6 @@
         Login with Google
       </button>
 
-      <div class="mt-5 text-xs border-b border-[#002D74] py-4 text-[#002D74]">
-        <a href="#">Forgot your password?</a>
-      </div>
-
-      <div class="mt-3 text-xs flex justify-between items-center text-[#002D74]">
-        <p>Don't have an account?</p>
-        <button class="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300">Register</button>
-      </div>
-    </div>
-
-    <!-- image -->
     <div class="md:block hidden w-1/2">
       <img class="rounded-2xl" src="newscentral/app/uidesign/news_central.jpg">
     </div>
