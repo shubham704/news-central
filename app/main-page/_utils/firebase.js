@@ -11,7 +11,7 @@ const firebaseConfig = {
   projectId: "newscentral-1234c",
   storageBucket: "newscentral-1234c.appspot.com",
   messagingSenderId: "879828794926",
-  appId: "1:879828794926:web:a0dbc8cdf6a128795129bf",
+  appId: "1:879828794926:web:a0dbc8cdf6a128795129bf"
 };
 
 // Initialize Firebase
