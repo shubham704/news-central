@@ -31,3 +31,10 @@
   .header-links li:not(.active):hover span::before {
     background-color: #ccc;
   }
+
+
+
+  .button:hover {
+    background-color:#002ead;
+    transition: 0.7s;
+  }
