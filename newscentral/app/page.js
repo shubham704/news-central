@@ -7,6 +7,9 @@ export default function Home() {
       <h2 style={{ ...styles.subtitle, fontStyle: "italic" }}>
         Khushi, Shubham, Navrajveer
       </h2>
+      <h2 style={{ ...styles.subtitle, fontStyle: "italic" }}>
+       Submitted to: Hani Mohammed
+        </h2>
       <h2 style={styles.subtitle}>
         <a href="/login-page" style={styles.link}>
           Proceed to NewsCentral
