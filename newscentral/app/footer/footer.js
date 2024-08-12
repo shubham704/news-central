@@ -1,34 +1,8 @@
 "use client"
 import "../styles/footer.css"
-import { useUserAuth } from "../login-page/_utils/auth-context.js";
-import MainPage from "../main-page/page";
-import Search from "../search/page";
-import { useState } from "react";
-import { useRouter } from 'next/navigation';
+
 const Footer = () => {
-    const [searchValue, setSearchValue] = useState('');
-    const router = useRouter();
-
-
-    const {firebaseSignOut} = useUserAuth();
-
     
-      // Function to handle the form submission
-      const handleSubmit = (event) => {
-        event.preventDefault(); // Prevent the default form submission
-            router.push(`../search?q=${encodeURIComponent(searchValue)}`);
-          
-      };
-
-      
-    async function SignOut() {
-        try {
-          await firebaseSignOut();
-          window.location.href = "./";
-        } catch (error) {
-          console.log(error);
-        }
-      }
     return (
       <main>
         <footer class="bg-gray-800 text-white mt-auto">
