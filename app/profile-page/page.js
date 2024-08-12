@@ -2,6 +2,7 @@
 import "../styles/profile.css"
 import "../styles/bootstrap.css"
 import Header from "../header/header"
+import Footer from "../footer/footer"
 import { useUserAuth } from "../login-page/_utils/auth-context"
 export default function ProfilePage(){
 

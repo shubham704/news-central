@@ -4,6 +4,7 @@ import Header from "../header/header";
 import { useRouter } from 'next/navigation';
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from 'react';
+import Footer from "../footer/footer";
 import Articles from "../api/newsapi";
 
 const ArticlePage = () => {
