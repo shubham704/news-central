@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.header h1 {
+    font-size: 36px;
+    color: #333;
+}
+.author-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.author-info div {
+    color: #555;
+}
+.author-info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.article-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.article-content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+.article-content h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    color: #555;
+}
+.share-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.share-buttons a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.share-facebook {
+    background-color: #3b5998;
+}
+.share-twitter {
+    background-color: #1da1f2;
+}
+.share-linkedin {
+    background-color: #0077b5;
+}
+.share-btn {
+    position: relative;
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.share-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 100;
+    text-align: left;
+}
+.share-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #555;
+    text-decoration: none;
+}
+.share-menu a:hover {
+    background-color: #f4f4f4;
+}
+.related-articles {
+    margin-top: 40px;
+}
+.related-articles h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.related-articles ul {
+    list-style: none;
+    padding: 0;
+}
+.related-articles ul li {
+    margin-bottom: 10px;
+}
+.related-articles ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+.related-articles ul li a:hover {
+    text-decoration: underline;
+}
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #777;
+}
