@@ -53,14 +53,14 @@ console.log("All APIs failed");
 };
 
 
+useEffect(() => {
   const loadArticles = async () => {
-    const fetchedArticles = await fetchArticles(articleURL);
+    const fetchedArticles = await fetchArticles();
     setMatchedArticle(fetchedArticles || []);
   };
 
   loadArticles();
-
-console.log(matchedArticle)
+}, []);
   return (
     <main>
     {matchedArticle && (
@@ -84,7 +84,10 @@ console.log(matchedArticle)
 
   <div class="article-content">
       <p>{matchedArticle.content}</p>
+      <br />
+      <p><b>Read Article <a href={matchedArticle.url}>here</a></b></p>
   </div>
+  <br />
   <div class="share-container">
       <button class="share-btn">Share</button>
       <div class="share-menu">
@@ -114,8 +117,10 @@ console.log(matchedArticle)
   );
 }
 const ArticlePage = () => {
+return(
 <Suspense fallback={<div>Loading...</div>}>
   <ArticlePageSuspense />
 </Suspense>
+)
 }
 export default ArticlePage;

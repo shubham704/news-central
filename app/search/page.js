@@ -33,9 +33,11 @@ function SearchBarFallback() {
     );
 }
 const Search = () => {
+  return (
   <Suspense fallback={<div>loading...</div>}>
     <SearchBarFallback />
   </Suspense>
+  )
 };
 
 export default Search;
