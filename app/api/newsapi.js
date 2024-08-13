@@ -1,5 +1,4 @@
 "use client";
-import { Main } from 'next/document';
 import '../styles/style.css'
 import Link from 'next/link';
 // import '../styles/bootstrap.css'
