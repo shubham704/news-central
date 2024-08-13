@@ -55,13 +55,13 @@ const Header = () => {
                 <nav className="bg-gray-800">
                     <div className="flex justify-center space-x-6 p-4">
                         <a href="./main-page" className="hover:text-gray-400">Home</a>
-                        <a href="#" className="hover:text-gray-400">World</a>
-                        <a href="#" className="hover:text-gray-400">Politics</a>
-                        <a href="#" className="hover:text-gray-400">Business</a>
-                        <a href="#" className="hover:text-gray-400">Technology</a>
-                        <a href="#" className="hover:text-gray-400">Sports</a>
-                        <a href="#" className="hover:text-gray-400">Entertainment</a>
-                        <a href="#" className="hover:text-gray-400">Opinion</a>
+                        <a href="./search?q=world" className="hover:text-gray-400">World</a>
+                        <a href="./search?q=politics" className="hover:text-gray-400">Politics</a>
+                        <a href="./search?q=business" className="hover:text-gray-400">Business</a>
+                        <a href="./search?q=technology" className="hover:text-gray-400">Technology</a>
+                        <a href="./search?q=sports" className="hover:text-gray-400">Sports</a>
+                        <a href="./search?q=entertainment" className="hover:text-gray-400">Entertainment</a>
+                        <a href="./search?q=travel" className="hover:text-gray-400">Travel</a>
                     </div>
                 </nav>
                 <div className="bg-red-600 text-white text-center py-2 font-bold">
