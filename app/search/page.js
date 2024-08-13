@@ -1,4 +1,5 @@
 "use client"
+import { Suspense } from "react";
 import Header from "../header/header";
 import { useRouter } from 'next/navigation';
 import { useSearchParams } from "next/navigation";
@@ -23,11 +24,14 @@ const Search = () => {
       }, [router.isReady, useSearchParams]);
 
     return (
+      <Suspense fallback={<div>Loading...</div>}>
+
         <div className="Search-Page">
             <Header></Header>
             <Articles query={searchQuery}></Articles>
             <Footer></Footer>
         </div>
+      </Suspense>
     );
 };
 

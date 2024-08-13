@@ -1,4 +1,5 @@
 "use client"
+import { Suspense } from 'react';
 import "../styles/article-page.css"
 import Header from "../header/header";
 import { useRouter } from 'next/navigation';
@@ -61,7 +62,7 @@ const ArticlePage = () => {
 
   console.log(matchedArticle)
     return (
-        <main>
+      <Suspense fallback={<div>Loading...</div>}>
       {matchedArticle && (
           <>
                 <Header></Header>
@@ -109,7 +110,8 @@ const ArticlePage = () => {
 
     </>
     )};
-      </main>
+      
+      </Suspense>
     );
 }
 export default ArticlePage;
