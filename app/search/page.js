@@ -7,8 +7,8 @@ import { useEffect, useState } from 'react';
 import Articles from "../api/newsapi";
 import Footer from "../footer/footer";
 
-const Search = () => {
-    const router = useRouter();
+function SearchBarFallback() {
+  const router = useRouter();
     const searchParams = useSearchParams();
 
     const [searchQuery, setSearchQuery] = useState(
@@ -24,15 +24,18 @@ const Search = () => {
       }, [router.isReady, useSearchParams]);
 
     return (
-      <Suspense fallback={<div>Loading...</div>}>
-
-        <div className="Search-Page">
+      
+      <div className="Search-Page">
             <Header></Header>
             <Articles query={searchQuery}></Articles>
             <Footer></Footer>
         </div>
-      </Suspense>
     );
+}
+const Search = () => {
+  <Suspense fallback={<div>loading...</div>}>
+    <SearchBarFallback />
+  </Suspense>
 };
 
 export default Search;
